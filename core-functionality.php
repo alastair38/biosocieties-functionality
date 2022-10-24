@@ -138,3 +138,26 @@ include( plugin_dir_path( __FILE__ ) . 'includes/blocks/register-blocks.php');
 // Include file to register Block Patterns
 
 include( plugin_dir_path( __FILE__ ) . 'includes/blocks/block-patterns.php');
+
+// Rename post to News and Features
+
+add_action( 'init', 'blockhaus_change_post_object' );
+// Change dashboard Posts to News
+function blockhaus_change_post_object() {
+$get_post_type = get_post_type_object('post');
+
+$labels = $get_post_type->labels;
+$labels->name = 'News and Features';
+$labels->singular_name = 'News and Feature';
+$labels->add_new = 'New News and Feature content';
+$labels->add_new_item = 'Add News and Feature content';
+$labels->edit_item = 'Edit News and Feature';
+$labels->new_item = 'News and Features';
+$labels->view_item = 'View News and Features';
+$labels->search_items = 'Search News and Features';
+$labels->not_found = 'No News and Features found';
+$labels->not_found_in_trash = 'No News and Features found in Trash';
+$labels->all_items = 'All News and Features';
+$labels->menu_name = 'News and Features';
+$labels->name_admin_bar = 'News and Features';
+}
