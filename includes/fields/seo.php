@@ -181,7 +181,7 @@ function blockhaus_acf_add_seo_field_groups() {
         ),
         array(
           'key' => 'field_62b19e4443072',
-          'label' => 'Publications Page Settings',
+          'label' => 'Journal Editions Page Settings',
           'name' => '',
           'type' => 'accordion',
           'instructions' => '',
@@ -199,9 +199,9 @@ function blockhaus_acf_add_seo_field_groups() {
         array(
           'key' => 'field_62b17d9a5d6a4',
           'label' => 'Header',
-          'name' => 'publication_header',
+          'name' => 'journal_editions_header',
           'type' => 'image',
-          'instructions' => 'Set the image that will display at the top of your main Publications page.',
+          'instructions' => 'Set the image that will display at the top of your main Journal Editions page.',
           'required' => 0,
           'conditional_logic' => 0,
           'wrapper' => array(
@@ -223,9 +223,9 @@ function blockhaus_acf_add_seo_field_groups() {
         array(
           'key' => 'field_62b1a13c12c4b',
           'label' => 'Description (copy)',
-          'name' => 'publication_page_description',
+          'name' => 'journal_editions_page_description',
           'type' => 'textarea',
-          'instructions' => '<p>Add a short description for your Publications page. To use this in a theme template, use the following code:</p><code>$description = get_field("publication_page_description", "options");</code>',
+          'instructions' => '<p>Add a short description for your Journal Editions page. To use this in a theme template, use the following code:</p><code>$description = get_field("journal_editions_page_description", "options");</code>',
           'required' => 0,
           'conditional_logic' => 0,
           'wrapper' => array(
@@ -234,7 +234,7 @@ function blockhaus_acf_add_seo_field_groups() {
             'id' => '',
           ),
           'default_value' => '',
-          'placeholder' => 'Add a short description for your Publications page',
+          'placeholder' => 'Add a short description for your Journal Editions page',
           'maxlength' => '',
           'rows' => '',
           'new_lines' => '',
@@ -242,7 +242,7 @@ function blockhaus_acf_add_seo_field_groups() {
         array(
           'key' => 'field_62b1a46314e37',
           'label' => 'Use transparent image layout',
-          'name' => 'publication_page_transparent_header',
+          'name' => 'journal_editions_page_transparent_header',
           'type' => 'true_false',
           'instructions' => 'If you are using an image with a transparent background, you can turn this setting on to adapt the layout to show the header background colour behind the image.',
           'required' => 0,
@@ -261,7 +261,7 @@ function blockhaus_acf_add_seo_field_groups() {
         array(
           'key' => 'field_62c6ba099zx99',
           'label' => 'Background color',
-          'name' => 'publication_choose_background',
+          'name' => 'journal_editions_choose_background',
           'type' => 'radio',
           'instructions' => '',
           'required' => 0,
@@ -287,7 +287,7 @@ function blockhaus_acf_add_seo_field_groups() {
         ),
         array(
           'key' => 'field_62b19f27e83e7',
-          'label' => 'Projects Page Settings',
+          'label' => 'Articles and Reviews Page Settings',
           'name' => '',
           'type' => 'accordion',
           'instructions' => '',
@@ -305,15 +305,15 @@ function blockhaus_acf_add_seo_field_groups() {
         array(
           'key' => 'field_62b17daf5d6a5',
           'label' => 'Header',
-          'name' => 'project_header',
+          'name' => 'articles-and-reviews_header',
           'type' => 'image',
-          'instructions' => 'Set the image that will display at the top of your main Projects page.',
+          'instructions' => 'Set the image that will display at the top of your main Articles and Reviews page.',
           'required' => 0,
           'conditional_logic' => 0,
           'wrapper' => array(
             'width' => '',
             'class' => '',
-            'id' => 'projects-header',
+            'id' => 'articles-and-reviews-header',
           ),
           'return_format' => 'array',
           'preview_size' => 'medium',
@@ -329,9 +329,9 @@ function blockhaus_acf_add_seo_field_groups() {
         array(
           'key' => 'field_62b1a112d50ae',
           'label' => 'Description',
-          'name' => 'project_page_description',
+          'name' => 'articles-and-reviews_page_description',
           'type' => 'textarea',
-          'instructions' => '<p>Add a short description for your Projects page. To use this in a theme template, use the following code:</p><code>$description = get_field("project_page_description", "options");</code>',
+          'instructions' => '<p>Add a short description for your Artices and Review page. To use this in a theme template, use the following code:</p><code>$description = get_field("articles-and-reviews_page_description", "options");</code>',
           'required' => 0,
           'conditional_logic' => 0,
           'wrapper' => array(
@@ -340,7 +340,7 @@ function blockhaus_acf_add_seo_field_groups() {
             'id' => '',
           ),
           'default_value' => '',
-          'placeholder' => 'Add a short description for your Projects page',
+          'placeholder' => 'Add a short description for your Articles and Reviews page',
           'maxlength' => '',
           'rows' => '',
           'new_lines' => '',
@@ -348,7 +348,7 @@ function blockhaus_acf_add_seo_field_groups() {
         array(
           'key' => 'field_62b1a61e126ca',
           'label' => 'Use transparent image layout',
-          'name' => 'project_page_transparent_header',
+          'name' => 'articles-and-reviews_page_transparent_header',
           'type' => 'true_false',
           'instructions' => 'If you are using an image with a transparent background, you can turn this setting on to adapt the layout to show the header background colour behind the image.',
           'required' => 0,
@@ -367,7 +367,7 @@ function blockhaus_acf_add_seo_field_groups() {
         array(
           'key' => 'field_62c6ba088zx86',
           'label' => 'Background color',
-          'name' => 'project_choose_background',
+          'name' => 'articles-and-reviews_choose_background',
           'type' => 'radio',
           'instructions' => '',
           'required' => 0,
