@@ -305,7 +305,7 @@ function blockhaus_acf_add_seo_field_groups() {
         array(
           'key' => 'field_62b17daf5d6a5',
           'label' => 'Header',
-          'name' => 'articles-and-reviews_header',
+          'name' => 'articles_and_reviews_header',
           'type' => 'image',
           'instructions' => 'Set the image that will display at the top of your main Articles and Reviews page.',
           'required' => 0,
@@ -313,7 +313,7 @@ function blockhaus_acf_add_seo_field_groups() {
           'wrapper' => array(
             'width' => '',
             'class' => '',
-            'id' => 'articles-and-reviews-header',
+            'id' => 'articles_and_reviews-header',
           ),
           'return_format' => 'array',
           'preview_size' => 'medium',
@@ -329,9 +329,9 @@ function blockhaus_acf_add_seo_field_groups() {
         array(
           'key' => 'field_62b1a112d50ae',
           'label' => 'Description',
-          'name' => 'articles-and-reviews_page_description',
+          'name' => 'articles_and_reviews_page_description',
           'type' => 'textarea',
-          'instructions' => '<p>Add a short description for your Artices and Review page. To use this in a theme template, use the following code:</p><code>$description = get_field("articles-and-reviews_page_description", "options");</code>',
+          'instructions' => '<p>Add a short description for your Artices and Review page. To use this in a theme template, use the following code:</p><code>$description = get_field("articles_and_reviews_page_description", "options");</code>',
           'required' => 0,
           'conditional_logic' => 0,
           'wrapper' => array(
@@ -348,7 +348,7 @@ function blockhaus_acf_add_seo_field_groups() {
         array(
           'key' => 'field_62b1a61e126ca',
           'label' => 'Use transparent image layout',
-          'name' => 'articles-and-reviews_page_transparent_header',
+          'name' => 'articles_and_reviews_page_transparent_header',
           'type' => 'true_false',
           'instructions' => 'If you are using an image with a transparent background, you can turn this setting on to adapt the layout to show the header background colour behind the image.',
           'required' => 0,
@@ -367,7 +367,7 @@ function blockhaus_acf_add_seo_field_groups() {
         array(
           'key' => 'field_62c6ba088zx86',
           'label' => 'Background color',
-          'name' => 'articles-and-reviews_choose_background',
+          'name' => 'articles_and_reviews_choose_background',
           'type' => 'radio',
           'instructions' => '',
           'required' => 0,
