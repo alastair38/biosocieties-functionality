@@ -75,7 +75,7 @@ function blockhaus_acf_add_seo_field_groups() {
         ),
         array(
           'key' => 'field_62b19ec8d2bb4',
-          'label' => 'Posts / Blog Page Settings',
+          'label' => 'News + Features Page Settings',
           'name' => '',
           'type' => 'accordion',
           'instructions' => '',
@@ -305,7 +305,7 @@ function blockhaus_acf_add_seo_field_groups() {
         array(
           'key' => 'field_62b17daf5d6a5',
           'label' => 'Header',
-          'name' => 'articles_and_reviews_header',
+          'name' => 'articles-and-reviews_header',
           'type' => 'image',
           'instructions' => 'Set the image that will display at the top of your main Articles and Reviews page.',
           'required' => 0,
@@ -313,7 +313,7 @@ function blockhaus_acf_add_seo_field_groups() {
           'wrapper' => array(
             'width' => '',
             'class' => '',
-            'id' => 'articles_and_reviews-header',
+            'id' => 'articles-and-reviews-header',
           ),
           'return_format' => 'array',
           'preview_size' => 'medium',
@@ -329,9 +329,9 @@ function blockhaus_acf_add_seo_field_groups() {
         array(
           'key' => 'field_62b1a112d50ae',
           'label' => 'Description',
-          'name' => 'articles_and_reviews_page_description',
+          'name' => 'articles-and-reviews_page_description',
           'type' => 'textarea',
-          'instructions' => '<p>Add a short description for your Artices and Review page. To use this in a theme template, use the following code:</p><code>$description = get_field("articles_and_reviews_page_description", "options");</code>',
+          'instructions' => '<p>Add a short description for your Artices and Review page. To use this in a theme template, use the following code:</p><code>$description = get_field("articles-and-reviews_page_description", "options");</code>',
           'required' => 0,
           'conditional_logic' => 0,
           'wrapper' => array(
@@ -348,7 +348,7 @@ function blockhaus_acf_add_seo_field_groups() {
         array(
           'key' => 'field_62b1a61e126ca',
           'label' => 'Use transparent image layout',
-          'name' => 'articles_and_reviews_page_transparent_header',
+          'name' => 'articles-and-reviews_page_transparent_header',
           'type' => 'true_false',
           'instructions' => 'If you are using an image with a transparent background, you can turn this setting on to adapt the layout to show the header background colour behind the image.',
           'required' => 0,
@@ -367,7 +367,7 @@ function blockhaus_acf_add_seo_field_groups() {
         array(
           'key' => 'field_62c6ba088zx86',
           'label' => 'Background color',
-          'name' => 'articles_and_reviews_choose_background',
+          'name' => 'articles-and-reviews_choose_background',
           'type' => 'radio',
           'instructions' => '',
           'required' => 0,
@@ -393,7 +393,7 @@ function blockhaus_acf_add_seo_field_groups() {
         ),
       array(
         'key' => 'field_62b19e4450901',
-        'label' => 'Resources Page Settings',
+        'label' => 'Video Page Settings',
         'name' => '',
         'type' => 'accordion',
         'instructions' => '',
@@ -411,9 +411,9 @@ function blockhaus_acf_add_seo_field_groups() {
       array(
         'key' => 'field_62b17d9a60902',
         'label' => 'Header',
-        'name' => 'resource_header',
+        'name' => 'video_header',
         'type' => 'image',
-        'instructions' => 'Set the image that will display at the top of your main Resources page.',
+        'instructions' => 'Set the image that will display at the top of your main Videos page.',
         'required' => 0,
         'conditional_logic' => 0,
         'wrapper' => array(
@@ -435,9 +435,9 @@ function blockhaus_acf_add_seo_field_groups() {
       array(
         'key' => 'field_62b1a13c70903',
         'label' => 'Description',
-        'name' => 'resource_page_description',
+        'name' => 'video_page_description',
         'type' => 'textarea',
-        'instructions' => '<p>Add a short description for your Resources page. To use this in a theme template, use the following code:</p><code>$description = get_field("resource_page_description", "options");</code>',
+        'instructions' => '<p>Add a short description for your Videos page. To use this in a theme template, use the following code:</p><code>$description = get_field("video_page_description", "options");</code>',
         'required' => 0,
         'conditional_logic' => 0,
         'wrapper' => array(
@@ -446,7 +446,7 @@ function blockhaus_acf_add_seo_field_groups() {
           'id' => '',
         ),
         'default_value' => '',
-        'placeholder' => 'Add a short description for your Resources page',
+        'placeholder' => 'Add a short description for your videos page',
         'maxlength' => '',
         'rows' => '',
         'new_lines' => '',
@@ -454,7 +454,7 @@ function blockhaus_acf_add_seo_field_groups() {
       array(
         'key' => 'field_62b1a46380904',
         'label' => 'Use transparent image layout',
-        'name' => 'resource_page_transparent_header',
+        'name' => 'video_page_transparent_header',
         'type' => 'true_false',
         'instructions' => 'If you are using an image with a transparent background, you can turn this setting on to adapt the layout to show the header background colour behind the image.',
         'required' => 0,
@@ -473,7 +473,7 @@ function blockhaus_acf_add_seo_field_groups() {
       array(
         'key' => 'field_62c6ba066zz66',
         'label' => 'Background color',
-        'name' => 'resource_choose_background',
+        'name' => 'video_choose_background',
         'type' => 'radio',
         'instructions' => '',
         'required' => 0,
