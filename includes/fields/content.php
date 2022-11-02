@@ -14,10 +14,10 @@ if( function_exists('acf_add_local_field_group') ):
     'fields' => array(
       array(
         'key' => 'field_62b1e2d7fc282',
-        'label' => 'Use transparent image layout',
-        'name' => 'transparent_image_layout',
+        'label' => 'Use header background image',
+        'name' => 'background_image_layout',
         'type' => 'true_false',
-        'instructions' => 'Turn this on if you are using a transparent image / graphic as the header for this page. This will offset the image to the right of the title and show the background colour through the image transparency.',
+        'instructions' => 'Turn this on if you are using the featured image header background for this page.',
         'required' => 0,
         'conditional_logic' => 0,
         'wrapper' => array(
@@ -30,71 +30,16 @@ if( function_exists('acf_add_local_field_group') ):
         'ui' => 1,
         'ui_on_text' => '',
         'ui_off_text' => '',
-      ),
-      array(
-        'key' => 'field_62c6ba063be46',
-        'label' => 'Background color',
-        'name' => 'choose_background',
-        'type' => 'radio',
-        'instructions' => '',
-        'required' => 0,
-        'conditional_logic' => 0,
-        'wrapper' => array(
-          'width' => '',
-          'class' => 'color-switcher',
-          'id' => '',
-        ),
-        'choices' => array(
-          'accent' => 'accent',
-          'offset' => 'offset',
-          'highlight' => 'highlight',
-          'accent-secondary' => 'accent-secondary',
-          'accent-tertiary' => 'accent-tertiary',
-        ),
-        'allow_null' => 1,
-        'other_choice' => 0,
-        'default_value' => '',
-        'layout' => 'vertical',
-        'return_format' => 'value',
-        'save_other_choice' => 0,
-      ),
+      )
     ),
     'location' => array(
       array(
         array(
           'param' => 'post_type',
-          'operator' => '==',
-          'value' => 'post',
+          'operator' => '!=',
+          'value' => 'journal_editions',
         ),
-      ),
-      array(
-        array(
-          'param' => 'post_type',
-          'operator' => '==',
-          'value' => 'page',
-        ),
-      ),
-      array(
-        array(
-          'param' => 'post_type',
-          'operator' => '==',
-          'value' => 'story',
-        ),
-      ),
-      array(
-        array(
-          'param' => 'post_type',
-          'operator' => '==',
-          'value' => 'project',
-        ),
-      ),
-      array(
-        array(
-          'param' => 'post_type',
-          'operator' => '==',
-          'value' => 'resource',
-        ),
-      ),
+      )
     ),
     'menu_order' => 0,
     'position' => 'side',
