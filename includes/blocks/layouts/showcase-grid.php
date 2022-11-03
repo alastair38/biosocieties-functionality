@@ -52,13 +52,13 @@ $content_items = get_posts([
 
 <section id="<?php echo $id;?>" class="<?php echo esc_attr($className); ?>" >
 
-<div class="grid gap-6 w-11/12 md:w-4/5 mx-auto py-12 <?php echo 'grid-cols-' . $columns . ' ' ;?>">
+<div class="grid gap-6 w-11/12 md:w-4/5 mx-auto py-12 grid-cols-1 md:grid-cols-2 <?php echo 'lg:grid-cols-' . $columns . ' ' ;?>">
   
   <?php 
 
     if($title && !$layout_alt):?>
 
-    <div class="relative flex items-center text-center p-6 justify-center gap-6 flex-col rounded-md bg-primary-default overflow-hidden shadow-md">
+    <div class="relative flex items-center text-center p-3 justify-center gap-6 flex-col rounded-md bg-primary-default overflow-hidden shadow-md">
         <?php if($title):?>
           <h2 class="text-xl font-black"><?php echo $title;?></h2>
         <?php endif;?>
@@ -68,7 +68,7 @@ $content_items = get_posts([
         <?php endif;?>
 
         <?php if($link):?>
-          <a aria-label="View all <?php echo $content['label'];?> content" class="px-3 py-1 rounded-full text-secondary border-secondary border hover:ring hover:ring-4 hover:ring-yellow-400" href="<?php echo $link; ?>">All <?php echo $content['label'];?></a>
+          <a aria-label="View all <?php echo $content['label'];?> content" class="px-3 font-base py-1 rounded-full text-secondary border-secondary border hover:ring hover:ring-4 hover:ring-yellow-400" href="<?php echo $link; ?>">All <?php echo $content['label'];?></a>
         <?php endif;?>
 
       </div>
@@ -91,10 +91,10 @@ if($title && $layout_alt):?>
 <?php endif;
    foreach($content_items as $item):?>
       <div class="relative flex rounded-md overflow-hidden shadow-md">
-        <a class="w-full flex" href="<?php echo get_the_permalink($item->ID);?>">
+        <a class="w-full text-base flex" href="<?php echo get_the_permalink($item->ID);?>">
         <?php echo get_the_post_thumbnail($item->ID, 'full', array( 'class' => 'w-full' ));?>
         
-         <span class="absolute bottom-2 left-2 right-2 bg-primary-default text-secondary px-4 py-2" > <?php echo get_the_title($item->ID);?></span>
+         <span class="absolute bottom-2 left-2 right-2 bg-primary-default text-secondary px-1 py-1 lg:py-2" > <?php echo get_the_title($item->ID);?></span>
         </a>
         
       </div>
