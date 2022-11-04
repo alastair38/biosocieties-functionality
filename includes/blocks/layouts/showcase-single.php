@@ -37,11 +37,11 @@ if( !empty($block['backgroundColor']) ) {
 
 ?>
 
-<section id="<?php echo $id;?>" class="<?php echo esc_attr($className); ?> py-6" >
-<div class="flex flex-col lg:flex-row items-center gap-2 lg:gap-12 mx-auto lg:p-6 w-11/12 lg:w-4/5 <?php echo esc_attr($className); ?>" >
-<figure class="w-full lg:w-1/3"><?php echo get_the_post_thumbnail($content->ID,'full');?></figure>
+<section id="<?php echo $id;?>" class="<?php echo esc_attr($className); ?> my-6 lg:my-16" >
+<div class="flex flex-col lg:flex-row items-center gap-2 lg:gap-12 mx-auto w-11/12 lg:w-4/5 <?php echo esc_attr($className); ?>" >
+<figure class="w-full flex-1"><?php echo get_the_post_thumbnail($content->ID,'full');?></figure>
 
-<div class="backdrop-blur w-full lg:w-2/3 space-y-2 lg:space-y-6 p-6 self-center z-10 has-light-opacity-background-color has-background">
+<div class="w-full lg:w-4/5 space-y-2 lg:space-y-6 p-6 self-center z-10">
 <h1 class="font-black has-large-font-size">
 <a class="" href="<?php echo get_the_permalink($content->ID);?>"><?php echo $content->post_title;?></a></h1>
 
