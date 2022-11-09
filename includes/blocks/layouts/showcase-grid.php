@@ -92,7 +92,7 @@ if($title && $layout_alt):?>
    foreach($content_items as $item):?>
       <div class="relative flex rounded-md overflow-hidden shadow-md">
         <a class="w-full text-base flex" href="<?php echo get_the_permalink($item->ID);?>">
-        <?php echo get_the_post_thumbnail($item->ID, 'full', array( 'class' => 'w-full' ));?>
+        <?php echo get_the_post_thumbnail($item->ID, 'portrait', array( 'class' => 'w-full' ));?>
         
          <span class="absolute bottom-2 left-2 right-2 bg-primary-default text-secondary px-1 py-1 lg:py-2" > <?php echo get_the_title($item->ID);?></span>
         </a>
