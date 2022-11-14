@@ -45,23 +45,22 @@ $content_items = get_posts([
 if($content_items):
 ?>
 
-<section id="<?php echo $id;?>" class="<?php echo esc_attr($className); ?> wp-block-group w-4/5 mx-auto my-6 lg:my-16" >
+<section id="<?php echo $id;?>" class="<?php echo esc_attr($className); ?> wp-block-group w-full lg:w-1/3" >
 
-  <div class="wp-block-group flex flex-col gap-6 p-6 lg:p-12 rounded-md has-light-opacity-background-color has-background"> 
+  <div class="wp-block-group flex flex-col gap-6 p-6 lg:p-12 bg-white/80 shadow-md rounded-md"> 
+    <InnerBlocks />
  <?php if($description):?>
   
-    <p class="text-center italic w-3/4 mx-auto"><?php echo $description;?></p>
+    <p class="text-center italic"><?php echo $description;?></p>
   
 <?php endif;?>
 
-    <div class="wp-block-buttons">
-      <div class="wp-block-button aligncenter is-style-button-rounded">
-        <a href="<?php echo get_field('external_link', $content_items[0]->ID);?>" class="wp-block-button__link has-primary-default-color has-accent-background-color has-text-color has-background wp-element-button">
+    
+        <a href="<?php echo get_field('external_link', $content_items[0]->ID);?>" class="bg-primary-default px-3 py-1 rounded-full w-fit mx-auto hover:ring-4 hover:ring-offset">
         View latest edition
         </a>
-      </div>
-      
-    </div>
+    
+  
     </div>
 
   

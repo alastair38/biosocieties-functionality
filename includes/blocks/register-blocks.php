@@ -101,6 +101,7 @@ acf_register_block_type(array(
     'align' => false,
     'jsx'   => true,
     'color' => true,
+    'jsx' 	=> true,
 ),
   //'enqueue_style' => get_template_directory_uri() . '/assets/css/style.css',
   'keywords'          => array( 'content', 'link', 'links' ),
