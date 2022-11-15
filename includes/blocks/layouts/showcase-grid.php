@@ -77,7 +77,7 @@ $content_items = get_posts([
 
 if($title && $layout_alt):?>
 
-<div class="relative col-span-full text-current flex items-center text-center p-6 justify-center gap-6 flex-col ">
+<div class="relative col-span-full text-current flex items-center text-center pb-6 px-6 justify-center gap-6 flex-col ">
     <?php if($title):?>
       <h2 class="text-gigantic font-black text-current"><?php echo $title;?></h2>
     <?php endif;?>
