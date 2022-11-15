@@ -47,7 +47,7 @@ if($content_items):
 
 <section id="<?php echo $id;?>" class="<?php echo esc_attr($className); ?> wp-block-group w-full lg:w-1/4" >
 
-  <div class="wp-block-group flex flex-col gap-6 p-6 lg:p-12 bg-white/80 shadow-md rounded-md"> 
+  <div class="wp-block-group flex flex-col gap-6 p-6 bg-white/80 shadow-md rounded-md"> 
     <InnerBlocks />
  <?php if($description):?>
   
