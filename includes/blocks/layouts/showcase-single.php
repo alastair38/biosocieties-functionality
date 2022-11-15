@@ -41,9 +41,9 @@ if( !empty($block['backgroundColor']) ) {
 <div class="flex flex-col lg:flex-row items-center gap-2 mx-auto <?php echo esc_attr($className); ?>" >
 <figure class="w-full flex-1"><?php echo get_the_post_thumbnail($content->ID,'full', array( 'class' => 'w-full lgw-3/5' ));?></figure>
 
-<div class="w-full lg:w-4/5 space-y-2 lg:space-y-6 lg:p-6 self-center z-10">
-<h1 class="font-black text-primary-default text-lg">
-<a class="" href="<?php echo get_the_permalink($content->ID);?>"><?php echo $content->post_title;?></a></h1>
+<div class="w-full lg:w-4/5 space-y-2 lg:space-y-6 lg:p-6 self-center flex-1">
+<h2 class="font-black text-primary-default text-xl">
+<a class="" href="<?php echo get_the_permalink($content->ID);?>"><?php echo $content->post_title;?></a></h2>
 
 <?php if($description):?>
   
