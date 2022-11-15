@@ -50,9 +50,9 @@ $content_items = get_posts([
 
 ?>
 
-<section id="<?php echo $id;?>" class="<?php echo esc_attr($className); ?>" >
+<section id="<?php echo $id;?>" class="<?php echo esc_attr($className); ?> py-20" >
 
-<div class="grid gap-6 w-11/12 md:w-4/5 mx-auto py-12 grid-cols-1 md:grid-cols-2 <?php echo 'lg:grid-cols-' . $columns . ' ' ;?>">
+<div class="grid gap-6 w-11/12 md:w-4/5 mx-auto grid-cols-1 md:grid-cols-2 <?php echo 'lg:grid-cols-' . $columns . ' ' ;?>">
   
   <?php 
 
