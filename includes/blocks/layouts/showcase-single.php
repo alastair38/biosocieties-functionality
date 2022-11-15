@@ -37,9 +37,9 @@ if( !empty($block['backgroundColor']) ) {
 
 ?>
 
-<section id="<?php echo $id;?>" class="<?php echo esc_attr($className); ?> w-full lg:w-2/3" >
+<section id="<?php echo $id;?>" class="<?php echo esc_attr($className); ?> w-full lg:w-3/4" >
 <div class="flex flex-col lg:flex-row items-center gap-2 mx-auto <?php echo esc_attr($className); ?>" >
-<figure class="w-full flex-1"><?php echo get_the_post_thumbnail($content->ID,'full', array( 'class' => 'w-full lgw-3/5' ));?></figure>
+<figure class="w-full flex-1 rounded-md shadow-md overflow-hidden"><?php echo get_the_post_thumbnail($content->ID,'full', array( 'class' => 'w-full lgw-3/5' ));?></figure>
 
 <div class="w-full lg:w-4/5 space-y-2 lg:space-y-6 lg:p-6 self-center flex-1">
 <h2 class="font-black text-primary-default text-xl">
