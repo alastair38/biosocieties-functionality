@@ -23,25 +23,27 @@ register_block_pattern_category(
 function blockhaus_register_patterns() {
 
   register_block_pattern(
-    'blockhaus/header-hero',
+    'blockhaus/latest-edition',
     array(
-        'title'       => __( 'Hero Header', 'blockhaus' ),
+        'title'       => __( 'Latest Edition', 'blockhaus' ),
         'categories'    => [
-          'header',
+          'related-content',
         ],
-        'content'     => '<!-- wp:group {"tagName":"section","className":"grid grid-cols-1 md:grid-cols-hero place-items-center w-4/5 py-20 mx-auto","layout":{"inherit":true}} -->
-        <section class="wp-block-group grid grid-cols-1 md:grid-cols-hero place-items-center w-4/5 py-20 mx-auto"><!-- wp:image {"id":578,"sizeSlug":"landscape","linkDestination":"none","className":"md:col-span-2 md:col-start-1 md:row-start-1 size-landscape aspect-video rounded-md p-2 -rotate-2 z-0 image"} -->
-        <figure class="wp-block-image md:col-span-2 md:col-start-1 md:row-start-1 size-landscape aspect-video rounded-md p-2 -rotate-2 z-0 image"><img src="/wp-content/themes/blockhaus/assets/images/block-patterns/hero-header.jpg" alt="A woman sits in a doorway looking at her laptop" class="wp-image-578"/></figure>
+        'content'     => '<!-- wp:group {"tagName":"section","className":"w-full lg:w-1/4","layout":{"type":"default"}} -->
+        <section id="latest-edition" class="wp-block-group w-full lg:w-1/4"><!-- wp:group {"style":{"spacing":{"blockGap":"0px"}},"className":"flex flex-col gap-6 p-6 bg-white/80 shadow-md rounded-md","layout":{"type":"default"}} -->
+        <div class="wp-block-group flex flex-col gap-6 p-6 bg-white/80 shadow-md rounded-md"><!-- wp:image {"align":"center","id":1885,"width":128,"height":100,"sizeSlug":"full","linkDestination":"none","className":"w-32"} -->
+        <figure class="wp-block-image aligncenter size-full is-resized w-32"><img src="http://biosocieties.local/wp-content/uploads/2022/11/Biosocieties-front-covers.png" alt="" class="wp-image-1885" width="128" height="100"/></figure>
         <!-- /wp:image -->
         
-        <!-- wp:group {"style":{"spacing":{"blockGap":"0px"}},"className":"bg-offset md:col-span-2 md:col-start-2 md:row-start-1 space-y-2 lg:space-y-6 p-6 self-center z-10","layout":{"inherit":false}} -->
-        <div class="wp-block-group bg-offset md:col-span-2 md:col-start-2 md:row-start-1 space-y-2 lg:space-y-6 p-6 self-center z-10"><!-- wp:heading {"level":1,"className":"heading font-black leading-10","fontSize":"gigantic"} -->
-        <h1 class="heading font-black leading-10 has-gigantic-font-size">Discover NeurOx YPAG</h1>
-        <!-- /wp:heading -->
+        <!-- wp:paragraph {"className":"text-center"} -->
+        <p class="text-center">BioSocieties is committed to the scholarly exploration of the crucial social, ethical and policy implications of developments in the life sciences and biomedicine.</p>
+        <!-- /wp:paragraph -->
         
-        <!-- wp:paragraph {"className":"paragraph"} -->
-        <p class="paragraph">Start your research journey here</p>
-        <!-- /wp:paragraph --></div>
+        <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+        <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-button-rounded rounded-full bg-primary-default hover:ring-4 hover:ring-offset"} -->
+        <div class="wp-block-button is-style-button-rounded rounded-full bg-primary-default hover:ring-4 hover:ring-offset"><a class="wp-block-button__link wp-element-button">View latest edition</a></div>
+        <!-- /wp:button --></div>
+        <!-- /wp:buttons --></div>
         <!-- /wp:group --></section>
         <!-- /wp:group -->',
     )

@@ -35,6 +35,13 @@ if( !empty($block['backgroundColor']) ) {
   $className .= ' has-' . $block['backgroundColor'] . '-background-color has-background';
 }
 
+$template = array(
+	
+    array( 'core/paragraph', array(
+        'content' => 'Biosocieties is committed to the scholarly exploration of the crucial social, ethical and policy implications of developments in the life sciences and biomedicine.',
+    ) )
+);
+
 $content_items = get_posts([
   'post_type' => 'journal_editions',
   'post_status' => 'publish',
@@ -48,12 +55,12 @@ if($content_items):
 <section id="<?php echo $id;?>" class="<?php echo esc_attr($className); ?> wp-block-group w-full lg:w-1/4" >
 
   <div class="wp-block-group flex flex-col gap-6 p-6 bg-white/80 shadow-md rounded-md"> 
-    <InnerBlocks />
- <?php if($description):?>
-  
-    <p class="text-center italic"><?php echo $description;?></p>
-  
-<?php endif;?>
+
+<!-- wp:paragraph -->
+<p>Biosocieties is committed to the scholarly exploration of the crucial social, ethical and policy implications of developments in the life sciences and biomedicine.</p>
+<!-- /wp:paragraph -->
+    
+ 
 
     
         <a href="<?php echo get_field('external_link', $content_items[0]->ID);?>" class="bg-primary-default px-3 py-1 rounded-full w-fit mx-auto hover:ring-4 hover:ring-offset">

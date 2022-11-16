@@ -31,25 +31,7 @@ if( function_exists('acf_add_local_field_group') ):
         'ui_on_text' => '',
         'ui_off_text' => '',
       ),
-      array(
-        'key' => 'field_629b1e2d8fc275',
-        'label' => 'Contain image layout',
-        'name' => 'contain_image_layout',
-        'type' => 'true_false',
-        'instructions' => 'Turn this on to contain the header background image and align to the right',
-        'required' => 0,
-        'conditional_logic' => 0,
-        'wrapper' => array(
-          'width' => '',
-          'class' => '',
-          'id' => '',
-        ),
-        'message' => '',
-        'default_value' => 0,
-        'ui' => 1,
-        'ui_on_text' => '',
-        'ui_off_text' => '',
-      )
+    
     ),
     'location' => array(
       array(
