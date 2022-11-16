@@ -29,10 +29,10 @@ function blockhaus_register_patterns() {
         'categories'    => [
           'related-content',
         ],
-        'content'     => '<!-- wp:group {"tagName":"section","className":"w-full lg:w-1/4","layout":{"type":"default"}} -->
+        'content'     => '<!-- wp:group {"name":"Latest Edition", "tagName":"section","className":"w-full lg:w-1/4","layout":{"type":"default"}} -->
         <section id="latest-edition" class="wp-block-group w-full lg:w-1/4"><!-- wp:group {"style":{"spacing":{"blockGap":"0px"}},"className":"flex flex-col gap-6 p-6 bg-white/80 shadow-md rounded-md","layout":{"type":"default"}} -->
-        <div class="wp-block-group flex flex-col gap-6 p-6 bg-white/80 shadow-md rounded-md"><!-- wp:image {"align":"center","id":1885,"width":128,"height":100,"sizeSlug":"full","linkDestination":"none","className":"w-32"} -->
-        <figure class="wp-block-image aligncenter size-full is-resized w-32"><img src="http://biosocieties.local/wp-content/uploads/2022/11/Biosocieties-front-covers.png" alt="" class="wp-image-1885" width="128" height="100"/></figure>
+        <div class="wp-block-group flex flex-col gap-6 p-6 bg-white/80 shadow-md rounded-md"><!-- wp:image {"align":"center","width":128,"height":100,"sizeSlug":"full","linkDestination":"none","className":"w-32"} -->
+        <figure class="wp-block-image aligncenter size-full is-resized w-32"><img src="/wp-content/themes/blockhaus-biosocieties\assets\images\defaults\biosocieties-covers.png" alt="" width="128" height="100"/></figure>
         <!-- /wp:image -->
         
         <!-- wp:paragraph {"className":"text-center"} -->
@@ -56,31 +56,35 @@ function blockhaus_register_patterns() {
          'categories'    => [
           'users',
         ],
-         'content'     => '<!-- wp:group {"style":{"spacing":{"blockGap":"0px"}},"className":"blockhaus-profile flex-col md:flex-row flex gap-0 md:gap-12 py-6"} -->
-         <div class="wp-block-group blockhaus-profile flex-col md:flex-row flex gap-0 md:gap-12 py-6"><!-- wp:image {"id":458,"sizeSlug":"profile","linkDestination":"none","className":"aspect-square min-w-fit max-w-fit"} -->
-         <figure class="wp-block-image size-profile aspect-square min-w-fit max-w-fit"><img src="http://ypag.local/wp-content/uploads/2022/05/janko-ferlic-1nizzZ-SFw4-unsplash-3-300x300.jpg" alt="" class="wp-image-458"/></figure>
-         <!-- /wp:image -->
-         
-         <!-- wp:group {"className":"self-start md:self-center mt-0 md:mt-auto py-6 md:p-0 space-y-6"} -->
-         <div class="wp-block-group self-start md:self-center mt-0 md:mt-auto py-6 md:p-0 space-y-6"><!-- wp:heading {"className":"font-bold"} -->
-         <h2 class="font-bold">Your name</h2>
+         'content'     => '<!-- wp:group {"className":"bg-neutral-light-100 p-6"} -->
+         <div class="wp-block-group bg-neutral-light-100 p-6"><!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large"} -->
+         <h3 class="has-large-font-size" style="font-style:normal;font-weight:700">Name</h3>
          <!-- /wp:heading -->
          
-         <!-- wp:paragraph -->
-         <p>Age:</p>
+         <!-- wp:group {"style":{"spacing":{"blockGap":"0px"}},"className":"flex flex-col lg:flex-row gap-2 items-center align-center text-center"} -->
+         <div class="wp-block-group flex flex-col lg:flex-row gap-2 items-center align-center text-center"><!-- wp:image {"align":"center","sizeSlug":"medium","linkDestination":"none","className":"is-style-default"} -->
+         <figure class="wp-block-image aligncenter size-medium is-style-default"><img src="/wp-content/themes/blockhaus-biosocieties\assets\images\defaults\profile.jpg" alt=""/></figure>
+         <!-- /wp:image -->
+         
+         <!-- wp:quote {"style":{"typography":{"fontStyle":"italic","fontWeight":"400"}},"className":"is-style-plain"} -->
+         <blockquote class="wp-block-quote is-style-plain" style="font-style:italic;font-weight:400"><!-- wp:paragraph -->
+         <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Non architecto ex cum autem eos dignissimos, reiciendis, deleniti culpa dolorem, eveniet voluptatum. Voluptate, ullam. Facilis, et rerum excepturi alias necessitatibus optio!"</p>
+         <!-- /wp:paragraph --></blockquote>
+         <!-- /wp:quote --></div>
+         <!-- /wp:group -->
+         
+         <!-- wp:group {"style":{"spacing":{"blockGap":"0px"}},"className":"flex gap-6 "} -->
+         <div class="wp-block-group flex gap-6"><!-- wp:group {"style":{"spacing":{"blockGap":"0px"}},"className":"flex flex-1 gap-6 justify-center flex-col"} -->
+         <div class="wp-block-group flex flex-1 gap-6 justify-center flex-col"><!-- wp:paragraph -->
+         <p>Short biography</p>
          <!-- /wp:paragraph -->
          
-         <!-- wp:paragraph -->
-         <p>Why I joined YPAG:</p>
-         <!-- /wp:paragraph -->
-         
-         <!-- wp:paragraph -->
-         <p>What I have gained from YPAG:</p>
-         <!-- /wp:paragraph -->
-         
-         <!-- wp:paragraph -->
-         <p>Fun fact:</p>
-         <!-- /wp:paragraph --></div>
+         <!-- wp:buttons -->
+         <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-button-rounded"} -->
+         <div class="wp-block-button is-style-button-rounded"><a class="wp-block-button__link wp-element-button" href="">View Profile</a></div>
+         <!-- /wp:button --></div>
+         <!-- /wp:buttons --></div>
+         <!-- /wp:group --></div>
          <!-- /wp:group --></div>
          <!-- /wp:group -->',
      )
@@ -124,55 +128,27 @@ function blockhaus_register_patterns() {
 ); 
 
  register_block_pattern(
-  'blockhaus/cta-with-video',
+  'blockhaus/showcase-grid',
   array(
-      'title'       => __( 'Call to Action', 'blockhaus' ),
+      'title'       => __( 'Showcase [Grid Layout]', 'blockhaus' ),
       'categories'    => [
-        'callouts-and-quotes',
+        'related-content',
       ],
       'content'     => '
-      <!-- wp:group {"tagName":"section","align":"full","className":"blockhaus-cta bg-accent slanted z-0 relative overflow-hidden"} -->
-      <section class="wp-block-group alignfull blockhaus-cta bg-accent slanted z-0 relative overflow-hidden"><!-- wp:heading {"textAlign":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"900"}},"fontSize":"gigantic"} -->
-      <h2 class="has-text-align-center has-gigantic-font-size" style="font-style:normal;font-weight:900">What is YPAG?</h2>
-      <!-- /wp:heading -->
-      
-      <!-- wp:paragraph {"align":"center","className":"w-3/4 mx-auto"} -->
-      <p class="has-text-align-center w-3/4 mx-auto">The NeurOX Young People’s Advisory Group (YPAG) are young co-researchers currently aged 16-19 years involved in mental health and ethics research.</p>
-      <!-- /wp:paragraph -->
-      
-      <!-- wp:image {"id":1108,"width":711,"height":711,"sizeSlug":"full","linkDestination":"none","className":"mx-auto flex justify-center flex-col items-center w-3/4"} -->
-      <figure class="wp-block-image size-full is-resized mx-auto flex justify-center flex-col items-center w-3/4"><img src="http://ypag.local/wp-content/uploads/2022/06/infographic_normalized-1.svg" alt="" class="wp-image-1108" width="711" height="711"/></figure>
-      <!-- /wp:image -->
-      
-      <!-- wp:buttons -->
-      <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"primary-default","align":"center","className":"is-style-button-retro"} -->
-      <div class="wp-block-button aligncenter is-style-button-retro"><a class="wp-block-button__link has-primary-default-background-color has-background" href="http://ypag.local/about/">Find out more</a></div>
-      <!-- /wp:button --></div>
-      <!-- /wp:buttons --></section>
-      <!-- /wp:group -->
+      <!-- wp:acf/showcase-grid {"id":"block_6351375bd79b4","name":"acf/showcase-grid","data":{"layout_alt":"0","_layout_alt":"field_63514c2dae525","showcase_title":"News and features","_showcase_title":"field_63512569962da","showcase_description":"Read our latest news and features.","_showcase_description":"field_63512585962db","showcase_link":"http://biosocieties.local/news-and-events/","_showcase_link":"field_635125a2962dc","items":"3","_items":"field_6350221b6eac0","grid_columns":"4","_grid_columns":"field_63503203e3172","content_type":"post","_content_type":"field_635022572d252"},"align":"","mode":"preview"} /-->
       ',
   )
 ); 
 
     register_block_pattern(
-      'blockhaus/front-page-contact-form',
+      'blockhaus/showcase-single',
       array(
-          'title'       => __( 'Contact Form - Front Page', 'blockhaus' ),
+          'title'       => __( 'Showcase - Single Item', 'blockhaus' ),
           'categories'    => [
-            'callouts-and-quotes',
+            'related-content',
           ],
           'content'     => '
-          <!-- wp:group {"tagName":"section","align":"full","className":"py-56 lg:py-32 w-3/4 mx-auto","layout":{"inherit":false}} -->
-          <section class="wp-block-group alignfull py-[20%] w-3/4 mx-auto"><!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"900"}},"fontSize":"gigantic"} -->
-          <h2 class="has-gigantic-font-size" style="font-style:normal;font-weight:900">Contact us</h2>
-          <!-- /wp:heading -->
-
-          <!-- wp:paragraph -->
-          <p>Use the form below to get in touch with NeurOx YPAG. Your details will only be used to contact you regarding the message you send.</p>
-          <!-- /wp:paragraph -->
-
-          <!-- wp:wpforms/form-selector {"formId":"142","className":"mx-auto"} /--></section>
-          <!-- /wp:group -->
+          <!-- wp:acf/showcase-single {"id":"block_636ea7f58c4f8","name":"acf/showcase-single","data":{"showcase_content":758,"_showcase_content":"field_63516f6fd1648","showcase_description":"How have opioid painkillers, known for over a century to be highly addictive, come to be considered a safe treatment for chronic pain?","_showcase_description":"field_63516f6fca1db"},"align":"","mode":"preview","className":""} /-->
           ',
       )
     ); 
