@@ -44,7 +44,7 @@ if( !empty($block['backgroundColor']) ) {
 <div class="w-full lg:w-4/5 space-y-2 lg:space-y-6 lg:p-6 self-center flex-1">
 <h2 class="font-black text-current text-xl">
 <a class="" href="<?php echo get_the_permalink($content->ID);?>"><?php echo $content->post_title;?></a></h2>
-
+<?php blockhaus_posted_by('italic', $content->post_author);?>
 <?php if($description):?>
   
 <p><?php echo $description;?></p> 
