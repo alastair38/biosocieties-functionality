@@ -151,7 +151,31 @@ acf_register_block_type(array(
   'keywords'          => array( 'content', 'link', 'links' ),
 ));
 
+acf_register_block_type(array(
+  'name'              => 'user-profile',
+  'title'             => __('User Profile'),
+  'description'       => __('Display any content type in a grid layout'),
+  'render_template' => plugin_dir_path( __FILE__ ) . '/layouts/user-profile.php',
+  'category'          => 'widgets',
+  'icon' => array(
+  // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
+    'foreground' => '#ff005d',
+  // Specifying a dashicon for the block
+    'src' => 'admin-links',
+  ),
+  'mode' => 'preview',
+'supports' => array( 
+    'align' => false,
+    'jsx'   => true,
+    'color' => true,
+),
+  //'enqueue_style' => get_template_directory_uri() . '/assets/css/style.css',
+  'keywords'          => array( 'user', 'profile'),
+));
+
 }
+
+
 
 // Check if function exists and hook into setup.
 if( function_exists('acf_register_block_type') ) {
