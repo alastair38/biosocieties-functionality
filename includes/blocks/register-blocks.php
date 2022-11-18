@@ -154,14 +154,14 @@ acf_register_block_type(array(
 acf_register_block_type(array(
   'name'              => 'user-profile',
   'title'             => __('User Profile'),
-  'description'       => __('Display any content type in a grid layout'),
+  'description'       => __('Display a selected user\'s profile'),
   'render_template' => plugin_dir_path( __FILE__ ) . '/layouts/user-profile.php',
   'category'          => 'widgets',
   'icon' => array(
   // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
     'foreground' => '#ff005d',
   // Specifying a dashicon for the block
-    'src' => 'admin-links',
+    'src' => 'admin-users',
   ),
   'mode' => 'preview',
 'supports' => array( 
