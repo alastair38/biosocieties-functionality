@@ -658,7 +658,7 @@ if( function_exists('acf_add_local_field_group') ):
         'sub_fields' => array(
           array(
             'key' => 'field_6377503eb4fcd',
-            'label' => 'link text',
+            'label' => 'Link text',
             'name' => 'link_text',
             'type' => 'text',
             'instructions' => '',
@@ -677,7 +677,7 @@ if( function_exists('acf_add_local_field_group') ):
           ),
           array(
             'key' => 'field_6377504eb4fce',
-            'label' => 'link url',
+            'label' => 'Link URL',
             'name' => 'link_url',
             'type' => 'url',
             'instructions' => '',
@@ -690,6 +690,49 @@ if( function_exists('acf_add_local_field_group') ):
             ),
             'default_value' => '',
             'placeholder' => '',
+          ),
+          array(
+            'key' => 'field_637e286cb71dd',
+            'label' => 'Publication',
+            'name' => 'link_publication',
+            'type' => 'text',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+              'width' => '',
+              'class' => '',
+              'id' => '',
+            ),
+            'default_value' => '',
+            'placeholder' => '',
+            'prepend' => '',
+            'append' => '',
+            'maxlength' => '',
+          ),
+          array(
+            'key' => 'field_637e286ab71dc',
+            'label' => 'Image (optional)',
+            'name' => 'link_image',
+            'type' => 'image',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+              'width' => '',
+              'class' => '',
+              'id' => '',
+            ),
+            'return_format' => 'array',
+            'preview_size' => 'medium',
+            'library' => 'all',
+            'min_width' => '',
+            'min_height' => '',
+            'min_size' => '',
+            'max_width' => '',
+            'max_height' => '',
+            'max_size' => '',
+            'mime_types' => '',
           ),
         ),
       ),
@@ -713,6 +756,7 @@ if( function_exists('acf_add_local_field_group') ):
     'description' => '',
     'show_in_rest' => 0,
   ));
+  
   
   
   endif;		
