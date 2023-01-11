@@ -63,7 +63,7 @@ if($content_items):
  
 
     
-        <a href="<?php echo get_field('external_link', $content_items[0]->ID);?>" class="bg-primary-default px-3 py-1 rounded-full w-fit mx-auto hover:ring-4 hover:ring-offset">
+        <a href="<?php echo get_field('external_link', $content_items[0]->ID);?>" class="bg-primary-default px-3 py-1 rounded-full w-fit mx-auto hover:ring-4 hover:ring-yellow-400">
         View latest edition
         </a>
     
