@@ -92,9 +92,9 @@ if($title && $layout_alt):?>
    foreach($content_items as $item):
     $external_link = get_field('external_link', $item->ID);
    ?>
-      <div class="relative flex rounded-md overflow-hidden shadow-md">
+      <div class="relative flex rounded-md shadow-md">
     
-	<a class="w-full text-base flex" href="
+	<a class="w-full text-base flex hover:ring-2 hover:ring-yellow-400 focus:ring-2 focus:ring-yellow-400 overflow-hidden rounded-md" href="
         
         <?php 
         if($external_link) {
@@ -104,7 +104,7 @@ if($title && $layout_alt):?>
         }?>">
         <?php echo get_the_post_thumbnail($item->ID, 'portrait', array( 'class' => 'w-full' ));?>
         
-         <span class="absolute bottom-2 left-2 right-2 bg-primary-default text-secondary px-1 py-1 lg:py-2" > <?php echo ($content['value'] === 'post') ? 'Blog: ' . get_the_title($item->ID) : get_the_title($item->ID);?></span>
+         <span class="absolute rounded-b-md <?php print (($content['value'] === 'articles-and-reviews')) ? 'bg-neutral-dark-900 text-primary-default' : 'bg-primary-default text-secondary';?>  bottom-0 p-1 lg:p-3" > <?php echo ($content['value'] === 'post') ? 'Blog: ' . get_the_title($item->ID) : get_the_title($item->ID);?></span>
         </a>
         
       </div>
