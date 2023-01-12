@@ -104,7 +104,7 @@ if($title && $layout_alt):?>
         }?>">
         <?php echo get_the_post_thumbnail($item->ID, 'portrait', array( 'class' => 'w-full' ));?>
         
-         <span class="absolute rounded-b-md <?php print (($content['value'] === 'articles-and-reviews')) ? 'bg-neutral-dark-900 text-primary-default' : 'bg-primary-default text-secondary';?>  bottom-0 p-1 lg:p-3" > <?php echo ($content['value'] === 'post') ? 'Blog: ' . get_the_title($item->ID) : get_the_title($item->ID);?></span>
+         <span class="absolute w-full rounded-b-md <?php print (($content['value'] === 'articles-and-reviews')) ? 'bg-neutral-dark-900 text-primary-default' : 'bg-primary-default text-secondary';?> bottom-0 p-1 lg:p-3" > <?php echo ($content['value'] === 'post') ? 'Blog: ' . get_the_title($item->ID) : get_the_title($item->ID);?></span>
         </a>
         
       </div>
