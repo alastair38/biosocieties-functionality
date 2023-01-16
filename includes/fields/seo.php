@@ -28,7 +28,8 @@ function blockhaus_acf_add_seo_field_groups() {
 
   if( function_exists('acf_add_local_field_group') ):
 
-    acf_add_local_field_group(array(
+    acf_add_local_field_group(
+    array(
       'key' => 'group_62b17d61f1a29',
       'title' => 'Content Pages',
       'fields' => array(

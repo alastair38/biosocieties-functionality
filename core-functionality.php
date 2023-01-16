@@ -127,6 +127,10 @@ include( plugin_dir_path( __FILE__ ) . 'includes/fields/contact.php');
 
 include( plugin_dir_path( __FILE__ ) . 'includes/fields/privacy.php');
 
+// Include file to register ACF Analytics fields
+
+include( plugin_dir_path( __FILE__ ) . 'includes/fields/analytics.php');
+
 // Include file to register ACF Funders fields
 
 include( plugin_dir_path( __FILE__ ) . 'includes/fields/funders.php');
