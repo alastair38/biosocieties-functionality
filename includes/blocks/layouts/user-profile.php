@@ -40,7 +40,7 @@ if( !empty($block['backgroundColor']) ) {
 ?>
 
 
-<div id="<?php echo $id;?>" class="<?php echo esc_attr($className); ?> bg-neutral-light-100 py-6 space-y-6">
+<div id="<?php echo $id;?>" class="<?php echo esc_attr($className); ?> bg-neutral-light-100 pb-6 space-y-6">
          <h3 class="has-large-font-size" style="font-style:normal;font-weight:700"><?php echo $profile['display_name'];?> </h3>
      
   <div class="flex flex-col lg:flex-row gap-6 items-center align-center text-center">
