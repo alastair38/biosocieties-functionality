@@ -223,7 +223,7 @@
       ),
       array(
         'key' => 'field_63c6a981e2295',
-        'label' => 'Social media settings',
+        'label' => 'Social media privacy settings',
         'name' => 'social_media_settings',
         'aria-label' => '',
         'type' => 'group',

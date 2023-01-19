@@ -10,7 +10,7 @@ if( function_exists('acf_add_local_field_group') ):
 
   acf_add_local_field_group(array(
     'key' => 'group_62a26e12e8c0f',
-    'title' => 'Funders',
+    'title' => 'Footer Logos',
     'fields' => array(
       array(
         'key' => 'field_62a26fff252e9',
