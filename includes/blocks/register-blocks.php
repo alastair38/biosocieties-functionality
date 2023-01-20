@@ -130,6 +130,28 @@ acf_register_block_type(array(
 ));
 
 acf_register_block_type(array(
+  'name'              => 'cookie-consent-button',
+  'title'             => __('Cookie consent button'),
+  'description'       => __('Open cookie consent panel'),
+  'render_template' => plugin_dir_path( __FILE__ ) . '/layouts/cookie-consent-button.php',
+  'category'          => 'widgets',
+  'icon' => array(
+  // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
+    'foreground' => '#ff005d',
+  // Specifying a dashicon for the block
+    'src' => 'admin-links',
+  ),
+  'mode' => 'preview',
+'supports' => array( 
+    'align' => false,
+    'jsx'   => true,
+    'color' => true,
+),
+  //'enqueue_style' => get_template_directory_uri() . '/assets/css/style.css',
+  'keywords'          => array( 'content', 'link', 'links' ),
+));
+
+acf_register_block_type(array(
   'name'              => 'showcase-single',
   'title'             => __('Showcase single content item'),
   'description'       => __('Display a single content item alongside the featured image'),
