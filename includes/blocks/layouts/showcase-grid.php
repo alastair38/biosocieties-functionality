@@ -94,14 +94,15 @@ if($title && $layout_alt):?>
    ?>
       <div class="relative flex rounded-md shadow-md">
     
-	<a class="w-full text-base flex hover:ring-2 hover:ring-yellow-400 focus:ring-2 focus:ring-yellow-400 overflow-hidden rounded-md" href="
+	<a class="w-full text-base flex hover:ring-2 hover:ring-yellow-400 focus:ring-2 focus:ring-yellow-400 overflow-hidden rounded-md" 
         
         <?php 
-        if($external_link) {
-        echo esc_url( $external_link );
-        } else {
-        echo esc_url( get_permalink($item->ID) );
-        }?>">
+        if($external_link) {?>
+        rel="external" href="<?php echo esc_url( $external_link );?>"
+        <?php } else {?>
+        href="<?php echo esc_url( get_permalink($item->ID) );?>"
+        <?php }?>
+        >
         <?php echo get_the_post_thumbnail($item->ID, 'portrait', array( 'class' => 'w-full' ));?>
         
          <span class="absolute w-full rounded-b-md <?php print (($content['value'] === 'articles-and-reviews')) ? 'bg-neutral-dark-900 text-primary-default' : 'bg-primary-default text-secondary';?> bottom-0 p-1 lg:p-3" > <?php echo ($content['value'] === 'post') ? 'Blog: ' . get_the_title($item->ID) : get_the_title($item->ID);?></span>
