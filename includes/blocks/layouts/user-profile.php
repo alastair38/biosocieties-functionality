@@ -47,7 +47,7 @@ if( !empty($block['backgroundColor']) ) {
 
          <?php if($image):?>
           <figure class="">
-            <img src="<?php echo $image['sizes']['medium'];?>" width="<?php echo $image['sizes']['medium-width'];?>" height="<?php echo $image['sizes']['medium-height'];?>" alt=""/>
+            <img src="<?php echo $image['sizes']['medium'];?>" width="<?php echo $image['sizes']['medium-width'];?>" height="<?php echo $image['sizes']['medium-height'];?>" alt="<?php echo $profile['display_name'];?>"/>
           </figure>
          <?php endif;?>
         
