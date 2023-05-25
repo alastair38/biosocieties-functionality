@@ -44,7 +44,7 @@ if( !empty($block['backgroundColor']) ) {
 <section id="<?php echo $id;?>" class="<?php echo esc_attr($className); ?> w-full lg:w-3/4 text-primary-default" >
 <div class="flex flex-col lg:flex-row items-center gap-2 justify-between mx-auto <?php echo esc_attr($className); ?>" >
 <figure class="w-full flex-1 overflow-hidden relative"><a class="" href="<?php echo get_the_permalink($content_items[0]->ID);?>"><?php echo get_the_post_thumbnail($content_items[0]->ID,'full', array( 'class' => 'w-full rounded-md shadow-md object-contain max-h-[70vh]' ));?>
-  <figcaption aria-hidden="true" class="absolute bottom-2 left-0 right-0 top-0 items-center text-gigantic flex justify-center">Blog</figcaption>
+  <figcaption aria-hidden="true" class="absolute bottom-2 left-0 right-0 top-0 items-center text-gigantic flex justify-center"><?php the_field('type', $content_items[0]->ID); ?></figcaption>
   </a>
 </figure>
 
