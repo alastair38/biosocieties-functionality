@@ -345,65 +345,48 @@ function blockhaus_register_patterns() {
         )
         );
 
-        $facebook = get_field('facebook_url', 'options');
 
-        if($facebook) {
-          $facebook_profile = '<!-- wp:social-link {"url":"' . $facebook . '","service":"facebook"} /-->';
-        }
+        // $instagram = get_field('instagram_url', 'options');
+       
 
-        $instagram = get_field('instagram_url', 'options');
-
-        if($instagram) {
-          $instagram_profile = '<!-- wp:social-link {"url":"' . $instagram . '","service":"instagram"} /-->';
-        }
-
-        $linkedin = get_field('linkedin_url', 'options');
-
-        if($linkedin) {
-          $linkedin_profile = '<!-- wp:social-link {"url":"' . $linkedin . '","service":"linkedin"} /-->';
-        }
+        // if($instagram) {
+        //   $instagram_profile = '<!-- wp:social-link {"url":"' . $instagram . '","service":"instagram"} /-->';
+        // }
 
 
-        $tiktok = get_field('tiktok_url', 'options');
+       
 
-        if($tiktok) {
-          $tiktok_profile = '<!-- wp:social-link {"url":"' . $tiktok . '","service":"tiktok"} /-->';
-        }
+        // $twitter = get_field('twitter_url', 'options');
+       
 
-        $twitter = get_field('twitter_url', 'options');
+        // if($twitter) {
+        //   $twitter_profile = '<!-- wp:social-link {"url":"' . $twitter . '","service":"twitter"} /-->';
+        // }
 
-        if($twitter) {
-          $twitter_profile = '<!-- wp:social-link {"url":"' . $twitter . '","service":"twitter"} /-->';
-        }
+        
 
-        $youtube = get_field('youtube_url', 'options');
+        // if($instagram || $twitter ):
 
-        if($youtube) {
-          $youtube_profile = '<!-- wp:social-link {"url":"' . $youtube . '","service":"youtube"} /-->';
-        }
+        //   register_block_pattern(
+        //     'blockhaus/social-media-profiles',
+        //     array(
+        //       'title'   => __('Social Media Profiles', 'blockhaus'),
+        //       'categories'    => [
+        //         'social-media',
+        //       ],
+        //       'content' => '
+        //       <!-- wp:social-links {"iconColor":"secondary","iconColorValue":"rgba(50 64 64 / 1)","size":"has-normal-icon-size","className":"is-style-logos-only"} -->
+        //       <ul class="wp-block-social-links has-normal-icon-size has-icon-color is-style-logos-only">' .
 
-        if($facebook || $instagram || $linkedin || $tiktok || $twitter || $youtube):
+        //       $instagram_profile . $twitter_profile
 
-          register_block_pattern(
-            'blockhaus/social-media-profiles',
-            array(
-              'title'   => __('Social Media Profiles', 'blockhaus'),
-              'categories'    => [
-                'social-media',
-              ],
-              'content' => '
-              <!-- wp:social-links {"iconColor":"secondary","iconColorValue":"rgba(50 64 64 / 1)","size":"has-normal-icon-size","className":"is-style-logos-only"} -->
-              <ul class="wp-block-social-links has-normal-icon-size has-icon-color is-style-logos-only">' .
+        //       . '</ul>
+        //       <!-- /wp:social-links -->
+        //       ',
+        //     )
+        //     );
 
-              $facebook_profile . $instagram_profile . $linkedin_profile . $tiktok_profile . $twitter_profile . $youtube_profile
-
-              . '</ul>
-              <!-- /wp:social-links -->
-              ',
-            )
-            );
-
-        endif;
+        // endif;
       
 }
 add_action( 'init', 'blockhaus_register_patterns' );
